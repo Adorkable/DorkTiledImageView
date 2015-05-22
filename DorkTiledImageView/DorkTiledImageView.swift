@@ -10,13 +10,30 @@ import UIKit
 
 @IBDesignable
 public class DorkTiledImageView : UIImageView {
+    internal var originalImage : UIImage?
+    
     public override var image : UIImage? {
         set {
-            super.image = self.generateTiledImage(newValue)
+            self.originalImage = newValue
+            self.updateFromOriginalImage()
         }
         get {
             return super.image
         }
+    }
+    
+    public required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        // Funky swapping, init with decoder doesn't call the overridden setter
+        if super.image != nil
+        {
+            self.image = super.image
+        }
+    }
+
+    internal func updateFromOriginalImage() {
+        super.image = self.generateTiledImage(self.originalImage)
     }
     
     internal func generateTiledImage(image : UIImage?) -> UIImage? {
@@ -48,5 +65,11 @@ public class DorkTiledImageView : UIImageView {
         }
         
         return result
+    }
+    
+    public override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        self.updateFromOriginalImage()
     }
 }
