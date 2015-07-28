@@ -52,6 +52,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3C577B4E1B6804A80030E85A /* DorkTiledImageView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DorkTiledImageView.podspec; sourceTree = "<group>"; };
 		3C9BE26B1B0BECA800CC130F /* DorkTiledImageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DorkTiledImageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C9BE26F1B0BECA800CC130F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C9BE2701B0BECA800CC130F /* DorkTiledImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DorkTiledImageView.h; sourceTree = "<group>"; };
@@ -98,6 +99,7 @@
 		3C9BE2611B0BECA800CC130F = {
 			isa = PBXGroup;
 			children = (
+				3C577B4E1B6804A80030E85A /* DorkTiledImageView.podspec */,
 				3C9BE26D1B0BECA800CC130F /* DorkTiledImageView */,
 				3C9BE27A1B0BECA800CC130F /* DorkTiledImageViewTests */,
 				3C9BE28C1B0BED0700CC130F /* Example */,
