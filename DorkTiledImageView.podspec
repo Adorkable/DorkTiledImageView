@@ -1,14 +1,14 @@
 Pod::Spec.new do |s|
 
   s.name         = "DorkTiledImageView"
-  s.version      = "0.1.2"
+  s.version      = "0.1.3"
   s.summary      = "simple Tiled Image View for iOS"
   s.license      = 'MIT'
 
   s.homepage     = "https://github.com/Adorkable/DorkTiledImageView"
 
   s.author       = { "Ian Grossberg" => "yo.ian.g@gmail.com" }
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '8.0'
 
   s.source       = { :git => "https://github.com/Adorkable/DorkTiledImageView.git", :tag => s.version.to_s }
 
